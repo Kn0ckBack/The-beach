@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #c76312;
+    line-height: 1.6;
+}
+
+body ::selection{
+    background: #e1e1e1;
+    color: red;
+}
+#showcase{
+    background-image: url('../img/minifeid-beach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+#showcase h1 {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 5rem;
+    font-weight: bolder;
+    padding: 1rem;
+    /* line-height: 1.2; */
+    margin-bottom: 1rem;
+    background-image: url('../img/pick\ me.png');
+    background-repeat: repeat-x;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 20s linear infinite;
+    -webkit-animation: moveBg 20s cubic-bezier(0, 20, 0, 10) infinite;
+}
+
+
+@keyframes moveBg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+#showcase p {
+    font-size: 20px;
+}
+#showcase .button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #c76312; 
+    border:#c7631250 1px solid;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+#showcase .button:hover {
+    background: #c7631275;
+    color: #fff;
+    transition: 1s ;
+}
+#section-a {
+    padding: 20px;
+    background: #f9f9f9;
+    
+}
+#section-b{
+    margin-top: 1em;
+
+    padding: 20px;
+    background: #c7631290;
+    color: #fff;
+} 
+#section-c {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    
+}
+#section-c div{
+    padding: 10px;
+    text-align: center;
+}
+#section-c .box-1, #section-c .box-3 {
+    background: #f9f9f9;
+    color: #c76312;
+}
+#section-c .box-2{
+    background: #c7631290;
+    color: #fff;
+}
